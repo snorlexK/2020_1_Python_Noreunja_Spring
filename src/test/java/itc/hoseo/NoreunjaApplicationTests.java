@@ -14,7 +14,7 @@ import org.springframework.data.domain.PageRequest;
 class NoreunjaApplicationTests {
 	
 	@Autowired
-	private GoogleRepository repo;
+	private KeywordRepository repo;
 	
 	@BeforeEach
 	public void init() {
