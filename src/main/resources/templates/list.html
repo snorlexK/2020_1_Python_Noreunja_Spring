@@ -48,27 +48,31 @@
                 <td><img th:src="@{/resources/img/logo_nate.png}" width="120px"></td>
                 <td><img th:src="@{/resources/img/logo_zum.png}" width="120px"></td>
             	<td>
-            		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	            	<div id="div_f">
+	                  <div id="prev">
+            		<a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
 	                  <div class="slideshow-container">
-	                  <div class="mySlides fade" style="display:block">
+	                  <div class="mySlides fade" style="display:block" id="slide_f">
 	                    <img th:src="@{/resources/img/logo_g.png}" id="s_logo">
 	                  </div>
 	
-	                  <div class="mySlides fade">
+	                  <div class="mySlides fade" id="slide_f">
 	                    <img th:src="@{/resources/img/logo_n.png}" id="s_logo">
 	                  </div>
 	
-	                  <div class="mySlides fade">
+	                  <div class="mySlides fade" id="slide_f">
 	                    <img th:src="@{/resources/img/logo_z.png}" id="s_logo">	                  
 	                  </div>
-	                  
-	                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	                  <div id="next">
+	                  <a class="next" onclick="plusSlides(1)">&#10095;</a></div>
 	                  
 	                  <!-- 달력 -->
-	              	<input type="text" name="time" id="time" size="8"/>
-	              	<input type="submit" value="적용">
+	                  <div id="date_box">
+	              	<input type="text" name="time" id="time" size="8"/></div>
+	              	<div id="date_button">
+	              	<input type="submit" value="적용"></div>
 	              	<input type="hidden" name="platform" id="platform2" value="google">
-	              	</div>
+	              	</div></div>
             	</td>
             </tr>
             <tr>

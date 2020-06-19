@@ -80,21 +80,16 @@ td{
 
 .slideshow-container {
   width:50px;
-	height:80px;
-  position: relative;
+  height:80px;
   margin: auto;
-  float:left;
 }
 
 .prev, .next {
   cursor: pointer;
-  top: 50%;
-  margin-top: -30px;
   color: gray;
   font-weight: bold;
   font-size: 18px;
   user-select: none;
-  float:left;
 }
 
 .next {
@@ -132,4 +127,40 @@ td{
    width: 10px;
    height: 10px;
    cursor: pointer;
+}
+
+#prev{
+  position: relative;
+  float:left;
+  left:5%;
+  top:25px;
+}
+#next{
+  position: relative;
+  float:left;
+  right:55%;
+  bottom:25px;
+}
+#slide_f{
+  position: relative;
+  float:left;
+  right:180%;
+  top:10px;
+}
+
+#date_box{
+  position: relative;
+  float:left;
+  bottom:60%;
+
+}
+
+#date_button{
+  position: relative;
+  float:left;
+  bottom:90%;
+  left:110px;
+}
+#div_f{
+  display:flex;;
 }
