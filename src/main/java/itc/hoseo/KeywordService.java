@@ -44,4 +44,14 @@ public class KeywordService {
 		}
 		return keywords;
 	}
+	
+	public String searchByKeyword(String platform, String keyword){
+		String url = "";
+		try {
+			url = repo.searchByKeyword(platform, keyword);
+		} catch(Exception e) {
+			log.debug("검색어 검색 중 오류 발생");
+		}
+		return url;
+	}
 }

@@ -24,7 +24,17 @@ public class MainController {
 	
 	@RequestMapping(path = "/", method = RequestMethod.POST)
 	public String searchByTime(ModelMap mm, String platform, String time) {
-		mm.put("list", keywordService.searchByTime(platform, time));
+		List<Keyword> keywords = keywordService.list("google"); 
+		keywords.addAll(keywordService.list("nate"));
+		keywords.addAll(keywordService.list("zum"));
+		keywords.addAll(keywordService.searchByTime(platform, time));
+		mm.put("list", keywords);
 		return "list";
+	}
+	
+	@RequestMapping(path = "/search", method = RequestMethod.POST)
+	public String searchByKeyword(ModelMap mm, String platform, String keyword) {
+		mm.put("search", keywordService.searchByKeyword(platform, keyword));
+		return "search";
 	}
 }

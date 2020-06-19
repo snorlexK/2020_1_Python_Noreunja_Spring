@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>검색</title>
+	<script th:inline="javascript">  
+		function opens() {
+	    	var url = /*[[${search}]]*/;  
+			window.open(url, "_blank");
+			history.back();
+		}
+	</script> 
+</head>
+<body onload="opens()">	
+</body>
+</html>

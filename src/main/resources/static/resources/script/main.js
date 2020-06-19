@@ -1,11 +1,11 @@
 $(function(){
-  $("#date2").datepicker({
+  $("#time").datepicker({
     onSelect:function(dateText, inst) {
       console.log(dateText);
       console.log(inst);
     }
   });
-  $("#date2").datepicker({
+  $("#time").datepicker({
     changeYear:true,
     changeMonth:true
     });
@@ -32,6 +32,9 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   
-
   slides[slideIndex-1].style.display = "block";
+  var platform = document.getElementById("platform2");
+  if (slideIndex == 1) {platform.value = "google";}
+  if (slideIndex == 2) {platform.value = "nate";}
+  if (slideIndex == 3) {platform.value = "zum";}
 }

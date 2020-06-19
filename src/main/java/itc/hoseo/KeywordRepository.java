@@ -68,4 +68,21 @@ public class KeywordRepository {
 		}
 		return keywords;
 	}
+	
+	public String searchByKeyword(String platform, String keyword) {
+		String url = "";
+		if(platform.equals("google")) {
+			keyword.replace(" ", "&");
+			url = "https://www.google.com/search?q=" + keyword + "&oq=" + keyword;
+		}
+		if(platform.equals("nate")) {
+			keyword.replace(" ", "%");
+			url = "https://search.daum.net/nate?w=tot&m=&q=" + keyword;
+		}
+		if(platform.equals("zum")) {
+			keyword.replace(" ", "+");
+			url = "http://search.zum.com/search.zum?method=uni&option=accu&qm=g_exp&query=" + keyword;
+		}
+		return url;
+	}
 }
