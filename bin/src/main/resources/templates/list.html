@@ -3,10 +3,19 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" th:href="@{/resources/css/main_css.css}">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="@{resources/script/jquery-ui-1.12.1/jquery-ui.min.css}">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="@{resources/script/jquery-ui-1.12.1/jquery-ui.min.js}"></script>
+    <script src="@{resources/script/jquery-ui-1.12.1/datepicker-ko.js}"></script>
+    
+    <script type="text/javascript" src="@{resources/script/main.js}"></script>
   </head>
   <body>
 	<div id="main_top">
-	    <p id="title">노른자</p>
+	    <img src="../static/resources/img/noreunja_logo.png" height="80px">
 	</div>
     <div id="body">
       <div id="search_box">
@@ -33,9 +42,28 @@
         <table>
             <tr>
                 <td><img src="../static/resources/img/logo_google.png" th:src="@{/resources/img/logo_google.png}" width="120px"></td>
-                <td><img src="../static/resources/img/logo_naver.png" th:src="@{/resources/img/logo_naver.png}" width="120px"></td>
                 <td><img src="../static/resources/img/logo_nate.png" th:src="@{/resources/img/logo_nate.png}" width="120px"></td>
                 <td><img src="../static/resources/img/logo_zum.png" th:src="@{/resources/img/logo_zum.png}" width="120px"></td>
+            	<td>
+            		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	                  <div class="slideshow-container">
+	                  <div class="mySlides fade" style="display:block">
+	                    <img src="../static/resources/img/logo_g.png" id="s_logo">
+	                  </div>
+	
+	                  <div class="mySlides fade">
+	                    <img src="../static/resources/img/logo_n.png" id="s_logo">
+	                  </div>
+	
+	                  <div class="mySlides fade">
+	                    <img src="../static/resources/img/logo_z.png" id="s_logo">	                  
+	                  </div>
+	                  
+	                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	                  
+	                  <!-- 달력 -->
+	              	<input type="text" name="date" id="date2" size="8"/>
+            	</td>
             </tr>
             <tr>
                 <td id="rank_box">
