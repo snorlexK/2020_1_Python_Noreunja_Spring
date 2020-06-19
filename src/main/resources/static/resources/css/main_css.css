@@ -166,3 +166,21 @@ td{
 #div_f{
   display:flex;;
 }
+
+
+#rank_num{
+	display: inline;
+	font-size: 20px;
+	color:	#FF0000;
+	margin-right:20px;
+}
+
+#rank_title{
+	display: inline;
+	font-size: 20px;
+	
+}
+
+#rank_line{
+	margin:15px;
+}
