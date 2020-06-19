@@ -23,7 +23,25 @@
        	<tr>
           <td>
               <div id="search_engine">
-                <img th:src="@{/resources/img/logo_google.png}" width="100px">
+                <div>
+	                <div class="slideshow-container" style="width:100px;">
+		                <div style="display:inline" >
+	            			<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+	            		</div>
+		                <div class="mySlides1 fade" style="display:inline; position:relative; top:17%;">
+		                  <img th:src="@{/resources/img/logo_g.png}" style="width:50%;">
+		                </div>
+		                <div class="mySlides1 fade" style="position:relative; top:17%;">
+		                  <img th:src="@{/resources/img/logo_n.png}" style="width:50%;">
+		                </div>
+		                <div class="mySlides1 fade" style="position:relative; top:17%;">
+		                  <img th:src="@{/resources/img/logo_z.png}" style="width:50%;">	                  
+	                    </div>
+		                <div style="display:inline" >
+		                   <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+		                </div>
+	              	</div>
+	              </div>
             </div>
           </td>
           <td>
@@ -50,21 +68,21 @@
             	<td>
 	            	<div id="div_f">
 	                  <div id="prev">
-            		<a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
+            		<a class="prev" onclick="plusSlides2(-1)">&#10094;</a></div>
 	                  <div class="slideshow-container">
-	                  <div class="mySlides fade" style="display:block" id="slide_f">
+	                  <div class="mySlides2 fade" style="display:block" id="slide_f">
 	                    <img th:src="@{/resources/img/logo_g.png}" id="s_logo">
 	                  </div>
 	
-	                  <div class="mySlides fade" id="slide_f">
+	                  <div class="mySlides2 fade" id="slide_f">
 	                    <img th:src="@{/resources/img/logo_n.png}" id="s_logo">
 	                  </div>
 	
-	                  <div class="mySlides fade" id="slide_f">
+	                  <div class="mySlides2 fade" id="slide_f">
 	                    <img th:src="@{/resources/img/logo_z.png}" id="s_logo">	                  
 	                  </div>
 	                  <div id="next">
-	                  <a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+	                  <a class="next" onclick="plusSlides2(1)">&#10095;</a></div>
 	                  
 	                  <!-- 달력 -->
 	                  <div id="date_box">

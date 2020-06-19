@@ -10,33 +10,63 @@ $(function(){
     changeMonth:true
     });
 });
-var slideIndex = 1;
 
-showSlides(slideIndex);
+var slideIndex1 = 1;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+showSlides1(slideIndex1);
+
+function plusSlides1(n) {
+  showSlides1(slideIndex1 += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide1(n) {
+  showSlides1(slideIndex1 = n);
 }
 
-function showSlides(n) {
+function showSlides1(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("mySlides1");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {slideIndex1 = 1}
+  if (n < 1) {slideIndex1 = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
   
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex1-1].style.display = "inline";
+  var platform = document.getElementById("platform1");
+  if (slideIndex1 == 1) {platform.value = "google";}
+  if (slideIndex1 == 2) {platform.value = "nate";}
+  if (slideIndex1 == 3) {platform.value = "zum";}
+}
+
+var slideIndex2 = 1;
+
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex2-1].style.display = "block";
   var platform = document.getElementById("platform2");
-  if (slideIndex == 1) {platform.value = "google";}
-  if (slideIndex == 2) {platform.value = "nate";}
-  if (slideIndex == 3) {platform.value = "zum";}
+  if (slideIndex2 == 1) {platform.value = "google";}
+  if (slideIndex2 == 2) {platform.value = "nate";}
+  if (slideIndex2 == 3) {platform.value = "zum";}
 }
 
 function keywordInsert(n) {

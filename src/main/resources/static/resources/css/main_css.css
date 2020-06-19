@@ -72,7 +72,9 @@ td{
   float:left;
 }
 
-.mySlides {display: none}
+.mySlides1 {display: none}
+
+.mySlides2 {display: none}
 
 .logotb td{
   width:100%;
