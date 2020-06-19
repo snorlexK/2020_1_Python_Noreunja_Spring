@@ -38,3 +38,9 @@ function showSlides(n) {
   if (slideIndex == 2) {platform.value = "nate";}
   if (slideIndex == 3) {platform.value = "zum";}
 }
+
+function keywordInsert(n) {
+	var keyword = document.getElementById("input_text");
+	var text = document.getElementById(n);
+	keyword.value = text.innerText;
+}

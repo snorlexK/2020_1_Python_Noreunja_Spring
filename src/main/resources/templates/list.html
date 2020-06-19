@@ -79,25 +79,25 @@
                 <td id="rank_box">
                 	<div th:each="keyword : ${list}">
                 		<h4 th:if="${keywordStat.index} < 10" th:text=${(keywordStat.index)+1} style="display:inline">1</h4>
-                		<p th:if="${keywordStat.index} < 10" th:text=${keyword.keyword} style="display:inline">검색어</p>
+                		<p th:if="${keywordStat.index} < 10" th:text=${keyword.keyword} th:id=${(keywordStat.index)+1} style="display:inline" th:onclick="keywordInsert(this.id)">검색어</p>
                 	</div>
                 </td>
                 <td id="rank_box">
                 	<div th:each="keyword : ${list}">
                 		<h4  th:if="${keywordStat.index} < 20 and ${keywordStat.index} >= 10" th:text=${(keywordStat.index)-9} style="display:inline">1</h4>
-                		<p th:if="${keywordStat.index} < 20 and ${keywordStat.index} >= 10" th:text=${keyword.keyword} style="display:inline">검색어</p>
+                		<p th:if="${keywordStat.index} < 20 and ${keywordStat.index} >= 10" th:text=${keyword.keyword} th:id=${(keywordStat.index)+1} style="display:inline" th:onclick="keywordInsert(this.id)">검색어</p>
                 	</div>
                 </td>
                 <td id="rank_box">
                 	<div th:each="keyword : ${list}">
                 		<h4 th:if="${keywordStat.index} < 30 and ${keywordStat.index} >= 20" th:text=${(keywordStat.index)-19} style="display:inline">1</h4>
-                		<p th:if="${keywordStat.index} < 30 and ${keywordStat.index} >= 20" th:text=${keyword.keyword} style="display:inline">검색어</p>
+                		<p th:if="${keywordStat.index} < 30 and ${keywordStat.index} >= 20" th:text=${keyword.keyword} th:id=${(keywordStat.index)+1} style="display:inline" th:onclick="keywordInsert(this.id)">검색어</p>
                 	</div>
                 </td>
                 <td id="rank_box">
                 	<div th:each="keyword : ${list}">
                 		<h4 th:if="${keywordStat.index} < 40 and ${keywordStat.index} >= 30" th:text=${(keywordStat.index)-29} style="display:inline">1</h4>
-                		<p th:if="${keywordStat.index} < 40 and ${keywordStat.index} >= 30" th:text=${keyword.keyword} style="display:inline">검색어</p>
+                		<p th:if="${keywordStat.index} < 40 and ${keywordStat.index} >= 30" th:text=${keyword.keyword} th:id=${(keywordStat.index)+1} style="display:inline" th:onclick="keywordInsert(this.id)">검색어</p>
                 	</div>
                 </td>
             </tr>
