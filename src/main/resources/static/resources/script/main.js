@@ -12,8 +12,10 @@ $(function(){
 });
 
 var slideIndex1 = 1;
+var slideIndex2 = 1;
 
 showSlides1(slideIndex1);
+showSlides2(slideIndex2);
 
 function plusSlides1(n) {
   showSlides1(slideIndex1 += n);
@@ -39,10 +41,6 @@ function showSlides1(n) {
   if (slideIndex1 == 2) {platform.value = "nate";}
   if (slideIndex1 == 3) {platform.value = "zum";}
 }
-
-var slideIndex2 = 1;
-
-showSlides2(slideIndex2);
 
 function plusSlides2(n) {
   showSlides2(slideIndex2 += n);
